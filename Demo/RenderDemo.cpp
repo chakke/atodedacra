@@ -27,7 +27,7 @@ bool RenderDemoScene::init()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
     
-    auto label = Label::createWithTTF("Physic Demo Scene", "fonts/Marker Felt.ttf", 24);
+    auto label = Label::createWithTTF("Render Demo Scene", "fonts/Marker Felt.ttf", 24);
     
  
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
