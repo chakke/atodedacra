@@ -1,6 +1,7 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
 #include "DemoScene.h"
+#include "Demo/PhysicDemoScene.h"
+
 USING_NS_CC;
 
 static cocos2d::Size designResolutionSize = cocos2d::Size(800, 480);
@@ -65,7 +66,7 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     register_all_packages();
 
-    auto scene = DemoScene::createScene();
+    auto scene = PhysicDemoScene::createScene();
 
     director->runWithScene(scene);
 

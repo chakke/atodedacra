@@ -1,13 +1,13 @@
-#include "DemoScene.h"
-#include "Demo/PhysicDemoScene.h"
+#include "PhysicDemoScene.h"
+
 USING_NS_CC;
 
-Scene* DemoScene::createScene()
+Scene* PhysicDemoScene::createScene()
 {
 
     auto scene = Scene::create();
     
-    auto layer = DemoScene::create();
+    auto layer = PhysicDemoScene::create();
 
     scene->addChild(layer);
 
@@ -15,7 +15,7 @@ Scene* DemoScene::createScene()
 }
 
 
-bool DemoScene::init()
+bool PhysicDemoScene::init()
 {
    
     if ( !Layer::init() )
@@ -27,7 +27,7 @@ bool DemoScene::init()
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
     
-    auto label = Label::createWithTTF("FUCK YOU", "fonts/Marker Felt.ttf", 24);
+    auto label = Label::createWithTTF("Physic Demo Scene", "fonts/Marker Felt.ttf", 24);
     
  
     label->setPosition(Vec2(origin.x + visibleSize.width/2,
